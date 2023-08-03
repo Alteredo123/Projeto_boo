@@ -73,21 +73,21 @@
             <section class="row mb-2">
                 <div class="col-md-12">
                     <label for="confirmar" class="mb-2">Confirmação de Email</label>
-                    <input type="text" id="confirmar" name="confimar" class="form-control bg-secondary" disabled>
+                    <input type="text" id="confirmar" name="confimar" class="form-control bg-secondary-subtle" disabled>
                 </div>
             </section>
 
             <!-- Campo Passoword:Senha -->
             <section class="row mb-2">
                 <div class="col-md-12 input-group">
-                    <label for="senha" class="input-group-text col-form-label">Senha</label>
-                    <input type="password" name="senha" id="senha" class="form-control">
-                    <i class="fa-solid fa-eye btn btn-info fs-5"></i>
+                    <label for="senha" class="input-group-text col-form-label bg-success-subtle">Senha</label>
+                    <input type="password" name="senha" id="senha" class="form-control bg-success-subtle">
+                    <i class="fa-solid fa-eye btn bg-success-subtle fs-5"></i>
                 </div>
             </section>
 
             <!-- Campo Radio -->
-            <section class="row mb-2">
+            <section class="row mb-2 ps-3">
                 <label class="col-form-label-lg">Qual seu nível de escolaridade?</label>
 
                 <div class="form-check">
@@ -104,8 +104,79 @@
                 </div>
 
             </section>
+            <div class="col-md-6 mx-auto mb-2 ">
+              <button class="btn btn-primary col-12">Verificar Escolaridade</button>
+            </div>
+            <!-- Campo Switch: Termos de Contrato -->
+            <div class="alert alert-warning mt-2">
+              <p>Você aceita os termos do contrato?</p>
+            </div>
+
+            <section class="form-check form-switch">
+              <input type="checkbox" name="escolha" id="escolha" value="escolha" class="form-check-input">
+              <label for="escolha" class="form-check-label">Exibir termos do contrato</label>
+            </section>
+            
+            <!-- Info do Contrato -->
+            <section class="p-5 mt-3" id="contrato">
+              <div class="container-fluid">
+                <h1>Termos do Contrato</h1>
+                <p class="lead altura">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat dolorum harum facilis ullam accusantium ipsa animi quae dolorem, vitae officiis perspiciatis laudantium iusto odio aperiam. Consectetur voluptate neque deleniti ratione?
+                  Vitae, repellendus officiis. Assumenda doloribus odio vero. Iure ratione fuga facere quam accusamus, quod aliquid, laboriosam totam vitae odio sapiente unde recusandae dolorem natus pariatur assumenda soluta fugiat quae quisquam.
+                  Commodi, doloribus quaerat aut harum quas suscipit perspiciatis iusto modi ad laborum corporis consequatur delectus praesentium numquam exercitationem architecto, at, magni accusamus accusantium nulla? A vero mollitia voluptate animi aperiam!
+                  In quasi dolores eius? Quasi quia expedita autem voluptates! Officia, libero eius sequi doloribus, saepe aspernatur obcaecati delectus possimus, corrupti odit ab consectetur quos nulla? Omnis incidunt natus facere cum.
+                  Libero consequatur nesciunt reiciendis exercitationem vel perferendis et repellat nobis velit, animi, quos commodi cum sed modi veniam iusto architecto minima debitis? Aliquid voluptate incidunt suscipit debitis, esse fuga deleniti.
+                  Natus porro rem nostrum, exercitationem ratione maiores nemo iste, voluptate et aperiam quasi recusandae obcaecati at quibusdam dolor, tempore dolorum! Incidunt ea rem vero dicta earum fugiat vitae dolore in.
+                  Sunt pariatur ex doloribus eveniet autem incidunt quos accusantium ut dicta nemo nobis ipsa consequatur dolor exercitationem voluptates accusamus nam in id deserunt possimus quasi ipsum, aliquid quo deleniti. Nemo?
+                  Sapiente ex nostrum molestias nobis mollitia! Magni soluta quibusdam ratione nihil veniam excepturi sit aperiam. Voluptatem molestias, vero fuga id, quis accusantium earum sequi omnis asperiores molestiae provident, quisquam voluptatum!
+                  Veniam accusamus eos perspiciatis adipisci nobis ut optio doloremque saepe praesentium aspernatur, quasi earum excepturi iure ea est perferendis at tenetur in sed harum cupiditate molestias placeat quibusdam. Odit, totam.
+                  Repellendus provident dicta exercitationem cum aliquam, soluta eaque error. Incidunt omnis nam qui ea ut nulla, necessitatibus fuga ipsam molestiae enim temporibus ratione sunt placeat consequatur quas repudiandae aspernatur? Eveniet?
+                </p>
+
+                <hr>
+
+                <div class="form-check">
+                  <input type="checkbox" name="concordo" id="concordo" value="concordo" class="form-check-input">
+                  <label for="concordo" class="form-check-label">Concordo</label>
+                </div>
+              </div>
+            </section>
+
+            <!-- Campo Select -->
+            <section class="row mb-2">
+              <label for="" class="col-form-label-lg">Em qual setor gostaria de trabalhar?</label>
+              <select name="trabalho" class="form-select">
+                <option value="">Escolha uma opção...</option>
+                <option value="RH">RH</option>
+                <option value="Tecnologia">Tecnologia</option>
+                <option value="Financeiro">Financeiro</option>
+              </select>
+            </section>
+
+            <!-- Campo Textarea: Comentário -->
+            <section class="row mb-2">
+              <div class="col-md-12">
+                <label for="mensagem" class="mb-2">Comente sobre o setor escolhido</label>
+                <textarea name="mensagem" id="mensagem" placeholder="descreva brevemente sua opnião" class="form-control"></textarea>
+              </div>
+            </section>
+
+            <!-- Campo de Cor -->
+            <section class="row mb-2">
+              <label for="cor" class="col-md-4">Escolha uma cor para o site</label>
+              <input type="color" name="cor" id="cor" class="col-md-8 p-0">
+
+            </section>
+            <div class="col-md-6 mx-auto my-5">
+              <button type="submit" class=" btn btn-primary col-md-12">Enviar Formulário</button>
+            </div>
+
+           
         </form>
-    </main>
+    
+    
+      </main>
 
     <footer class="container-fluid bg-dark text-white py-3">
         <section class="row">
