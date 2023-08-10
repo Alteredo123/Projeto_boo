@@ -98,5 +98,64 @@ btnEscolaridade.addEventListener("click",(evento)=>{
       // console.log(evento)
       evento.preventDefault() // Esta função irá impedir o comportamento padrão do botão
 
-      console.log(escolaridade[1])
+      // console.log(escolaridade[2])
+      for(let itens of escolaridade){
+         // console.log(itens)
+         if(itens.checked){
+               alert(`Sua escolaridade é ${itens.value}`) //isto é uma template string, outra forma de concatenar.
+               // alert("Sua escolaridade é " + itens.value)
+               // let opcao = confirm("Tem certeza?")
+               // console.logo(opcao)
+         }
+      }
+
+
+})
+
+let escolha = document.querySelector("#escolha")
+let contrato = document.querySelector("#contrato")
+
+contrato.classList.add("d-none")
+
+escolha.addEventListener("change", ()=>{
+   if(escolha.checked){
+         contrato.classList.remove("d-none")
+         contrato.classList.add("d-block")
+   }
+   else{
+         contrato.classList.remove("d-block")
+         contrato.classList.add("d-none")
+   }
+})
+
+let concordo = document.querySelector("#concordo")
+
+concordo. addEventListener("change",()=>{
+   if(concordo.checked){
+      alert("Obrigado pela escolha")
+   }
+   else{
+      alert("Poxa, muito triste sua decisão")
+      let mensagem = prompt("Diga porque você desmarcou")//criar uma caixa de texto
+   }
+})
+
+let trabalho = document.querySelector(".form-select")
+trabalho.addEventListener("change",()=>{
+   //console.log(trabalho.options)
+
+   for(let itens of trabalho){
+      if(itens.selected){
+         // console.log(itens.value)
+         if(itens.value == "RH"){
+            trabalho.style.backgroundColor = "cyan"
+         }
+         if(itens.value == "Tecnologia"){
+            trabalho.style.backgroundColor = "brown"
+         }
+         if(itens.value == "Financeiro"){
+            trabalho.style.backgroundColor = "purple"
+         }
+      }
+   }
 })
